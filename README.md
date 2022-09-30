@@ -5,17 +5,19 @@ edname is a simple utility that helps you rename files and directories with the 
 ## Install
 
 `sudo make install`
+
 You should also check your [$EDITOR](https://bash.cyberciti.biz/guide/$EDITOR_variable) environment variable and set up your `.bashrc` according to your preference.
 You may also consider installing [trash-cli](https://github.com/andreafrancia/trash-cli).
 
 ## Usage
 
 `edname .`
+
 A list of files in your current directory will pop up in `$EDITOR`(vi if unset).
 Once you make changes and close the editor, each directory path and filename will be recreated.
 It is important that you don't add or delete lines from the file, each line corresponds to the original filepath.
 You can easily rename not just files but also folders, and create or delete new folders on the fly.
-You can even swap filenames as easily as swapping one line of text for anothers.
+You can even swap filenames as easily as swapping one line of text for another.
 
 ## How it works
 
