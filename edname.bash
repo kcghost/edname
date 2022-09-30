@@ -1,5 +1,5 @@
 #!/bin/bash
-# Rename files in the current directory with the help of a text editor
+# Rename files in the target directory with the help of a text editor
 # WARNING: Recreates directory structure, so might mess up directory permissions
 set -euo pipefail
 
@@ -7,8 +7,8 @@ removedir="false"
 target=""
 
 help() {
-	echo "$0 [-h] [-r] target"
-	echo ""
+	echo "Usage: edname [-h] [-r] target"
+	echo "Rename filepaths in target directory in \$EDITOR (${EDITOR:-vi})"
 	echo "-h: Display this help message"
 	echo "-r: Automatically remove backup directory (dangerous!)"
 	echo ""
